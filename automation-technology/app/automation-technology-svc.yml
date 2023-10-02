@@ -55,11 +55,12 @@ services:
   minCpu: 20m
   maxCpu: 500m
 - name: db-els1
+  alias: els1
   image: els
   elsId: els1
   minimumMasterNode: 2
   clusters: els1,els2,els3
-  heapSize: 9g
+  heapSize: 300m
   maxClauseCount: 500000
   queryCacheSize: 30%
   bulkQueueSize: 500
@@ -71,6 +72,7 @@ services:
   minCpu: 100m
   maxCpu: 2000m
 - name: db-els2
+  alias: els2
   image: els
   elsId: els2
   minimumMasterNode: 2
@@ -87,6 +89,7 @@ services:
   minCpu: 100m
   maxCpu: 2000m
 - name: db-els3
+  alias: els3
   image: els
   elsId: els3
   minimumMasterNode: 2
@@ -103,6 +106,7 @@ services:
   minCpu: 100m
   maxCpu: 2000m
 - name: db-kfk1
+  alias: kfk1
   image: kfk
   kfkId: kfk1
   kafkaBrokerID: 1
@@ -115,12 +119,13 @@ services:
   kafkaSocketReceiveBufferBytes: 102400
   kafkaSocketRequestMaxBytes: 104857600
   kafkaMaxMessageBytes: 1000012
-  kafkaHeapOpts: -Xmx2560m -Xms2560m
+  kafkaHeapOpts: -Xmx300m -Xms300m
   minMem: 300Mi
   minCpu: 100m
   maxMem: 6Gi
   maxCpu: 1500m
 - name: db-kfk2
+  alias: kfk2
   image: kfk
   kfkId: kfk2
   kafkaBrokerID: 2
@@ -133,12 +138,13 @@ services:
   kafkaSocketReceiveBufferBytes: 102400
   kafkaSocketRequestMaxBytes: 104857600
   kafkaMaxMessageBytes: 1000012
-  kafkaHeapOpts: -Xmx2560m -Xms2560m
+  kafkaHeapOpts: -Xmx300m -Xms300m
   minMem: 300Mi
   minCpu: 100m
   maxMem: 6Gi
   maxCpu: 1500m
 - name: db-kfk3
+  alias: kfk3
   image: kfk
   kfkId: kfk3
   kafkaBrokerID: 3
@@ -151,7 +157,7 @@ services:
   kafkaSocketReceiveBufferBytes: 102400
   kafkaSocketRequestMaxBytes: 104857600
   kafkaMaxMessageBytes: 1000012
-  kafkaHeapOpts: -Xmx2560m -Xms2650m
+  kafkaHeapOpts: -Xmx300m -Xms300m
   minMem: 300Mi
   minCpu: 100m
   maxMem: 6Gi
@@ -174,6 +180,7 @@ services:
   minCpu: 20m
   maxCpu: 500m
 - name: db-redis
+  alias: redis
   image: redis
   minMem: 300Mi
   minCpu: 50m
@@ -196,6 +203,7 @@ services:
   minCpu: 20m
   maxCpu: 300m
 - name: db-zk1
+  alias: zk1
   image: zk
   kfkId: kfk1
   zooServerID: 1
@@ -206,6 +214,7 @@ services:
   maxMem: 2Gi
   maxCpu: 300m
 - name: db-zk2
+  alias: zk2
   image: zk
   kfkId: kfk2
   zooServerID: 2
@@ -216,6 +225,7 @@ services:
   maxMem: 2Gi
   maxCpu: 300m
 - name: db-zk3
+  alias: zk3
   image: zk
   kfkId: kfk3
   zooServerID: 3
