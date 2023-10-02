@@ -1,0 +1,4 @@
+version: v1
+images:
+- name: zk
+  image: 3dsinteractive/zookeeper:3.0

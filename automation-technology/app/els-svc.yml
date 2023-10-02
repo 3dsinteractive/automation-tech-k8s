@@ -1,0 +1,53 @@
+version: v1
+services:
+- name: els1
+  image: els
+  elsId: els1
+  minimumMasterNode: 2
+  clusters: els1,els2,els3
+  heapSize: 9g
+  maxClauseCount: 500000
+  queryCacheSize: 30%
+  bulkQueueSize: 500
+  indexQueueSize: 1000
+  snapshotS3Key:
+  snapshotS3Secret:
+  minMem: 300Mi
+  maxMem: 14Gi
+  minCpu: 100m
+  maxCpu: 2000m
+  clientId: c1
+- name: els2
+  image: els
+  elsId: els2
+  minimumMasterNode: 2
+  clusters: els1,els2,els3
+  heapSize: 9g
+  maxClauseCount: 500000
+  queryCacheSize: 30%
+  bulkQueueSize: 500
+  indexQueueSize: 1000
+  snapshotS3Key:
+  snapshotS3Secret:
+  minMem: 300Mi
+  maxMem: 14Gi
+  minCpu: 100m
+  maxCpu: 2000m
+  clientId: c1
+- name: els3
+  image: els
+  elsId: els3
+  minimumMasterNode: 2
+  clusters: els1,els2,els3
+  heapSize: 9g
+  maxClauseCount: 500000
+  queryCacheSize: 30%
+  bulkQueueSize: 500
+  indexQueueSize: 1000
+  snapshotS3Key:
+  snapshotS3Secret:
+  minMem: 300Mi
+  maxMem: 14Gi
+  minCpu: 100m
+  maxCpu: 2000m
+  clientId: c1

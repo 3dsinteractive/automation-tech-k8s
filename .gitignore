@@ -1,0 +1,6 @@
+out-*.yml
+out-*.yml.bak
+.DS_Store
+out-*
+!out-env.yml
+.vscode

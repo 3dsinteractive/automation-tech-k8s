@@ -1,0 +1,4 @@
+version: v1
+images:
+- name: redis
+  image: 3dsinteractive/redis:5.0-custom

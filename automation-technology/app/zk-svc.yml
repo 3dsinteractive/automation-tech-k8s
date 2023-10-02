@@ -1,0 +1,35 @@
+version: v1
+services:
+- name: zk1
+  image: zk
+  kfkId: kfk1
+  zooServerID: 1
+  zooServers: 0.0.0.0:2888:3888,zk2:2888:3888,zk3:2888:3888
+  zooHeapSize: 1024
+  minMem: 300Mi
+  minCpu: 50m
+  maxMem: 2Gi
+  maxCpu: 300m
+  clientId: c1
+- name: zk2
+  image: zk
+  kfkId: kfk2
+  zooServerID: 2
+  zooServers: zk1:2888:3888,0.0.0.0:2888:3888,zk3:2888:3888
+  zooHeapSize: 1024
+  minMem: 300Mi
+  minCpu: 50m
+  maxMem: 2Gi
+  maxCpu: 300m
+  clientId: c1
+- name: zk3
+  image: zk
+  kfkId: kfk3
+  zooServerID: 3
+  zooServers: zk1:2888:3888,zk2:2888:3888,0.0.0.0:2888:3888
+  zooHeapSize: 1024
+  minMem: 300Mi
+  minCpu: 50m
+  maxMem: 2Gi
+  maxCpu: 300m
+  clientId: c1

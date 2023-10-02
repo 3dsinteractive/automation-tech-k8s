@@ -1,0 +1,4 @@
+version: v1
+images:
+- name: kfk
+  image: 3dsinteractive/kafka:2.0-custom

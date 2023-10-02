@@ -1,0 +1,4 @@
+version: v1
+images:
+- name: els
+  image: 3dsinteractive/elasticsearch:6.8.23-custom

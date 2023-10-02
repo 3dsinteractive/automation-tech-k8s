@@ -1,0 +1,12 @@
+version: v1
+services:
+- name: metrics-agents
+  alias: metrics-agents
+  image: metrics-agents
+  replicas: 1
+  env: agentscheduler
+  minMem: 300Mi
+  maxMem: 8Gi
+  minCpu: 20m
+  maxCpu: 500m
+  clientId: c1

@@ -1,0 +1,4 @@
+version: v1
+images:
+- name: automation-technology
+  image: 3dsinteractive/automation-technology:prd-1.0.20230822043718
