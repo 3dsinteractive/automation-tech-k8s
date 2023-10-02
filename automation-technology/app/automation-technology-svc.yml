@@ -60,14 +60,14 @@ services:
   elsId: els1
   minimumMasterNode: 2
   clusters: els1,els2,els3
-  heapSize: 300m
+  heapSize: 500m
   maxClauseCount: 500000
   queryCacheSize: 30%
   bulkQueueSize: 500
   indexQueueSize: 1000
   snapshotS3Key:
   snapshotS3Secret:
-  minMem: 300Mi
+  minMem: 600Mi
   maxMem: 14Gi
   minCpu: 100m
   maxCpu: 2000m
@@ -77,14 +77,14 @@ services:
   elsId: els2
   minimumMasterNode: 2
   clusters: els1,els2,els3
-  heapSize: 9g
+  heapSize: 500m
   maxClauseCount: 500000
   queryCacheSize: 30%
   bulkQueueSize: 500
   indexQueueSize: 1000
   snapshotS3Key:
   snapshotS3Secret:
-  minMem: 300Mi
+  minMem: 600Mi
   maxMem: 14Gi
   minCpu: 100m
   maxCpu: 2000m
@@ -94,14 +94,14 @@ services:
   elsId: els3
   minimumMasterNode: 2
   clusters: els1,els2,els3
-  heapSize: 9g
+  heapSize: 500m
   maxClauseCount: 500000
   queryCacheSize: 30%
   bulkQueueSize: 500
   indexQueueSize: 1000
   snapshotS3Key:
   snapshotS3Secret:
-  minMem: 300Mi
+  minMem: 600Mi
   maxMem: 14Gi
   minCpu: 100m
   maxCpu: 2000m
@@ -119,8 +119,8 @@ services:
   kafkaSocketReceiveBufferBytes: 102400
   kafkaSocketRequestMaxBytes: 104857600
   kafkaMaxMessageBytes: 1000012
-  kafkaHeapOpts: -Xmx300m -Xms300m
-  minMem: 300Mi
+  kafkaHeapOpts: -Xmx500m -Xms500m
+  minMem: 600Mi
   minCpu: 100m
   maxMem: 6Gi
   maxCpu: 1500m
@@ -138,8 +138,8 @@ services:
   kafkaSocketReceiveBufferBytes: 102400
   kafkaSocketRequestMaxBytes: 104857600
   kafkaMaxMessageBytes: 1000012
-  kafkaHeapOpts: -Xmx300m -Xms300m
-  minMem: 300Mi
+  kafkaHeapOpts: -Xmx500m -Xms500m
+  minMem: 600Mi
   minCpu: 100m
   maxMem: 6Gi
   maxCpu: 1500m
@@ -157,8 +157,8 @@ services:
   kafkaSocketReceiveBufferBytes: 102400
   kafkaSocketRequestMaxBytes: 104857600
   kafkaMaxMessageBytes: 1000012
-  kafkaHeapOpts: -Xmx300m -Xms300m
-  minMem: 300Mi
+  kafkaHeapOpts: -Xmx500m -Xms500m
+  minMem: 600Mi
   minCpu: 100m
   maxMem: 6Gi
   maxCpu: 1500m
