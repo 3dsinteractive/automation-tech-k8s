@@ -1,4 +1,4 @@
 version: v1
 images:
 - name: metrics-agents
-  image: 3dsinteractive/pam-metrics-agents:automation-technology-1.0.20230627045959
+  image: 3dsinteractive/automation-technology:prd-1.0.20230822043718
