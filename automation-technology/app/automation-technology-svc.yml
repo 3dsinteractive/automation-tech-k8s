@@ -54,7 +54,7 @@ services:
   maxMem: 8Gi
   minCpu: 20m
   maxCpu: 500m
-- name: els1
+- name: db-els1
   image: els
   elsId: els1
   minimumMasterNode: 2
@@ -70,7 +70,7 @@ services:
   maxMem: 14Gi
   minCpu: 100m
   maxCpu: 2000m
-- name: els2
+- name: db-els2
   image: els
   elsId: els2
   minimumMasterNode: 2
@@ -86,7 +86,7 @@ services:
   maxMem: 14Gi
   minCpu: 100m
   maxCpu: 2000m
-- name: els3
+- name: db-els3
   image: els
   elsId: els3
   minimumMasterNode: 2
@@ -156,7 +156,7 @@ services:
   minCpu: 100m
   maxMem: 6Gi
   maxCpu: 1500m
-- name: metrics-agents
+- name: mon-metrics-agents
   alias: metrics-agents
   image: metrics-agents
   replicas: 1
@@ -165,7 +165,7 @@ services:
   maxMem: 8Gi
   minCpu: 20m
   maxCpu: 500m
-- name: node-daemon
+- name: mon-node-daemon
   alias: node-daemon
   image: node-daemon
   env: node-daemon
