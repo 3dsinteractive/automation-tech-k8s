@@ -1,6 +1,6 @@
 version: v1
 services:
-- name: register-api
+- name: tcir-register-api
   alias: register-api
   image: automation-technology
   replicas: 1
@@ -9,7 +9,7 @@ services:
   maxMem: 8Gi
   minCpu: 20m
   maxCpu: 500m
-- name: mail-consumer
+- name: tcir-mail-consumer
   alias: mail-consumer
   image: automation-technology
   replicas: 1
@@ -18,7 +18,7 @@ services:
   maxMem: 8Gi
   minCpu: 20m
   maxCpu: 500m
-- name: batch-scheduler
+- name: tcir-batch-scheduler
   alias: batch-scheduler
   image: automation-technology
   replicas: 1
@@ -27,7 +27,7 @@ services:
   maxMem: 8Gi
   minCpu: 20m
   maxCpu: 500m
-- name: batch-ptask-api
+- name: tcir-batch-ptask-api
   alias: batch-ptask-api
   image: automation-technology
   replicas: 1
@@ -36,7 +36,7 @@ services:
   maxMem: 8Gi
   minCpu: 20m
   maxCpu: 500m
-- name: batch-ptask-worker
+- name: tcir-batch-ptask-worker
   alias: batch-ptask-worker
   image: automation-technology
   replicas: 1
@@ -45,7 +45,7 @@ services:
   maxMem: 8Gi
   minCpu: 20m
   maxCpu: 500m
-- name: external-api
+- name: tcir-external-api
   alias: external-api
   image: automation-technology
   replicas: 1
