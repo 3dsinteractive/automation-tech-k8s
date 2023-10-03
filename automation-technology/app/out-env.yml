@@ -1,3 +1,4 @@
 # cfg-shared
 CACHE_SERVER: redis:6379
 MQ_SERVERS: kfk1:9092,kfk2:9092,kfk3:9092
+ELS_SERVERS: http://els1:9200,http://els2:9200,http://els3:9200
