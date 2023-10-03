@@ -1,4 +1,4 @@
 version: v1
 images:
 - name: node-daemon
-  image: 3dsinteractive/pam-node-daemon:automation-technology-1.0.20230627050205
+  image: 3dsinteractive/automation-technology:prd-1.0.20210118001006

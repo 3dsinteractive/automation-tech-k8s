@@ -162,15 +162,6 @@ services:
   minCpu: 100m
   maxMem: 6Gi
   maxCpu: 1500m
-- name: mon-metrics-agents
-  alias: metrics-agents
-  image: metrics-agents
-  replicas: 1
-  env: agentscheduler
-  minMem: 300Mi
-  maxMem: 8Gi
-  minCpu: 20m
-  maxCpu: 500m
 - name: mon-node-daemon
   alias: node-daemon
   image: node-daemon
