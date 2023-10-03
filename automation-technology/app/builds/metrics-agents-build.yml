@@ -1,0 +1,4 @@
+version: v1
+images:
+- name: metrics-agents
+  image: 3dsinteractive/automation-technology-metrics-agents:prd-1.0.20210118001006

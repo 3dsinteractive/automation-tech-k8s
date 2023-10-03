@@ -166,7 +166,16 @@ services:
   alias: node-daemon
   image: node-daemon
   env: node-daemon
-  minMem: 300Mi
+  minMem: 50Mi
+  maxMem: 8Gi
+  minCpu: 20m
+  maxCpu: 500m
+- name: mon-metrics-agents
+  alias: metrics-agents
+  image: metrics-agents
+  replicas: 1
+  env: metrics-agents
+  minMem: 50Mi
   maxMem: 8Gi
   minCpu: 20m
   maxCpu: 500m
